@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ai calica</title>
+    <script>
+        var quebrada = false;
+        function mudaLampada(tipo) {
+            if (!quebrada) {
+                document.getElementById("lux").src = "imagens/" + tipo + ".jpg";
+                if (tipo == 'lampada-quebrada') {
+                    quebrada = true;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Acenda a f*cking light!</h1>
+    <img src="imagens/lampada-apagada.jpg" id="lux" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')">
+</body>
+</html>

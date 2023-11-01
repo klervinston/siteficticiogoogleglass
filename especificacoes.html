@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Glass</title>
+    <link rel="stylesheet" href="estilo.css"/>
+    <link rel="stylesheet" href="especificacoes.css">
+    <style>
+        body {
+            background-image: url(background2.jpg);
+            font-family: Arial;
+            font-size: 10pt;
+        }
+        iframe#frame-spec {
+            width: 400px;
+            height: 280px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<script>
+    function mudaFoto (foto) {
+    document.getElementById("icone").src = foto;
+}
+</script>
+<body>
+    <div id="interface">
+
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+        
+            <img id= "icone" src="imagens/especificacoes.png" alt="">
+            <nav id="menu">
+                <h1>Menu principal</h1>
+                <ul id="menu">
+                    <li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="modelo.html">Home</a></li>
+                    <li onmouseover="mudaFoto('imagens/especificacoes.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="especificacoes.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="faleconosco.html">Fale conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3>Glass > Especificações</h3>
+                        <h1>Especificações Raio-x no Google glass</h1>
+                        <h2>por Titio</h2>
+                        <h3>Atualizado em 22/Outubro/2023</h3>
+                    </hgroup>
+                </header>
+                <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+                    Clique sobre as áreas destacadas em vermelho
+
+                <section id="conteudo">
+                    <img src="imagens/glass-esquema-marcado.jpg" alt="Especificações do Glass" usemap="#meumapa">
+                    <map name="meumapa">
+                        <area shape="poly" coords="181,220,267,205,268,243,184,256" href="especificacoes2.html#tela" target="janela">
+                        <area shape="circle" coords="158,242,12" href="especificacoes2.html#camera" target="janela">
+                        <area shape="circle" coords="76,51,12" href="especificacoes2.html#bateria" target="janela">
+                        <area shape="poly" coords="28,144,83,214,83,252,25,168" href="especificacoes2.html#sensores" target="janela">
+                    </map>
+                    <iframe src="especificacoes2.html" frameborder="0" name="janela" id="frame-spec"></iframe>
+                </section>
+            </article>
+        </section>
+        
+        
+        <footer id="rodape">
+            <p>Copyright &copy;2023 - by Klervinston Ferreira <br/>
+            <a href="https://www.instagram.com/klervinston/" target="_blank">Instagram</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
