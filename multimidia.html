@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Glass</title>
+    <link rel="stylesheet" href="estilo.css"/>
+    <link rel="stylesheet" href="multimidia.css">
     <style>
         body {
             background-image: url(background2.jpg);
         }
     </style>
-    <link rel="stylesheet" href="estilo.css"/>
 </head>
 <script>
     function mudaFoto (foto) {
@@ -18,7 +19,6 @@
 </script>
 <body>
     <div id="interface">
-
         <header id="cabecalho">
             <hgroup>
                 <h1>Google Glass</h1>
@@ -38,17 +38,30 @@
             </nav>
         </header>
 
-        <hgroup>
-        <h3>Glass > Multimídia</h3>
-        <h1>Sons e Vídeos</h1>
-        <h2>por Titio</h2>
-        <h3>Atualizado em 27/Outubro/2023</h3>
-        </hgroup>
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3>Glass > Multimídia</h3>
+                        <h1>Sons e Vídeos</h1>
+                        <h2>por Titio</h2>
+                        <h3 class="direita">Atualizado em 27/Outubro/2023</h3>
+                    </hgroup>
+                </header>
 
-        <h1>Áudio e Vídeo</h1>
-        <!-- [VÍDEO] -->
-        <h1>Abaixo temos o mesmo vídeo, mas agora a fonte é do YouTube.</h1>
-        <!-- LINK DO VÍDEO -->
+                <div id="tv-radio">
+                    <h1 id="titulo">Áudio e Vídeo</h1>
+                    <audio id="musica" src="musica/musica-audidoevideo.mp3" controls="controls">
+                    </audio>
+                    <video id="filme" src="videos/video-audioevideo.mp4" controls="controls" poster="imagens/ideia-de-marketing.png">
+
+                    </video>
+
+                </div>
+                <h1 id="titulo">Abaixo temos o link do vídeo pelo YouTube.</h1>
+                <iframe id="link" width="560" height="315" src="https://www.youtube.com/embed/4EvNxWhskf8?si=wU94NUogP2g9ZSpU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </article>
+        </section>
         <footer id="rodape">
             <p>Copyright &copy;2023 - by Klervinston Ferreira <br/>
             <a href="https://www.instagram.com/klervinston/" target="_blank">Instagram</a></p>

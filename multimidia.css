@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+div#tv-radio {
+    width: 900px;
+    height: 580px;
+    margin: auto;
+    background: url("imagens/tv-radio.jpg") no-repeat;
+    background-color: #ffffff;
+}
+
+audio#musica {
+    display: block;
+    position: relative;
+    left: 660px;
+    top: 470px;
+    width: 200px;
+}
+
+video#filme {
+    display: block;
+    position: relative;
+    left: 180px;
+    top: 115px;
+    width: 480px;
+    height: 200px;
+}
+
+iframe#link {
+    display: block;
+    position: relative;
+    left: 200px;
+    top: 10px;
+    margin-bottom: 20px;
+}
+
+h1#titulo {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #6565b0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+}

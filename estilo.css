@@ -21,6 +21,21 @@ div#interface {
     padding: 10px 10px 10px 10px;
 }
 
+div video#possibilidades {
+    display: block;
+    position: relative;
+    width: 550px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+div video#recentes {
+    display: block;
+    position: relative;
+    width: 350px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
 header#cabecalho img#icone {
     position: absolute;
     left: 970px;

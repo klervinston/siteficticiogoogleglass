@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+form {
+    width: 600px;
+    margin: auto;
+}
+
+input, textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(225, 225, 225, 0.8);
+}
+
+input:hover, textarea:hover {
+    background-color: #dddddd;
+}
+
+textarea {
+    display: block;
+    margin: auto;
+}
+
+legend {
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+
+fieldset {
+    border-color: #cecece;
+    margin: 20px;
+}
+
+fieldset#sexo {
+    width: 200px;
+}
+
+fieldset#usuario {
+    background: url("imagens/usuario.jpg") no-repeat 95% 95%;
+}
+
+fieldset#endereco {
+    background: url("imagens/endereço.jpg") no-repeat 95% 95%;
+}
+
+fieldset#mensagem {
+    background: url("imagens/mensagem.jpg") no-repeat 95% 95%;
+}
+
+fieldset#adquirir {
+    background: url("imagens/compra.jpg") no-repeat 95% 95%;
+}
